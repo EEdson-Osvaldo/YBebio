@@ -1,0 +1,99 @@
+.menudropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.btndropdown{
+    background-color: rgb(110, 83, 83);
+    color: rgb(110, 83, 83);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.menudropdown-conteudo{
+    display: none;
+    position: absolute;
+    background-color: rgb(110, 85, 85);
+    min-width: 145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-width: 15px;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+.menudropdown-conteudo a{
+    color: #000;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menudropdown-conteudo a:hover{
+    background-color: rgb(190, 157, 157);
+    border-width: 15px;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+.mostrarMenuDropdown{
+    display: block;
+}
+
+.menudropdown:hover .btndropdown{
+    background-color: rgb(110, 83, 83);
+}
+
+/* Segundo Dropdown*/
+
+.menudropdown2{
+    position: relative;
+    display: inline-block;
+}
+
+.btndropdown2{
+    background-color: rgb(110, 83, 83);
+    color: rgb(110, 83, 83);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.menudropdown-conteudo2{
+    display: none;
+    position: absolute;
+    background-color: rgb(110, 85, 85);
+    min-width: 145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-width: 15px;
+    border-radius: 25px;
+    border-top-right-radius: 25px;  
+}
+
+.menudropdown-conteudo2 a{
+    color: #000;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menudropdown-conteudo2 a:hover{
+    background-color: rgb(190, 157, 157);
+    border-width: 15px;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+.mostrarMenuDropdown2{
+    display: block;
+}
+
+.menudropdown2:hover .btndropdown2{
+    background-color: rgb(110, 83, 83);
+}
+

@@ -1,0 +1,54 @@
+body {
+  line-height: 1.5;
+}
+
+.tabmenu-wrap {
+
+}
+.tabmenu-wrap .tab-nav {
+  display: table;
+  width: 100%;
+}
+.tabmenu-wrap .tab-nav .nav {
+  display: table-cell;
+  width: 50px;
+}
+.tabmenu-wrap .tab-nav .nav a {
+  transition: 0.4s;
+  position: relative;
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid #e5e8eb;
+  padding-bottom: 1px;
+  padding-top: 5px;
+  text-decoration: none;
+}
+.tabmenu-wrap .tab-nav .nav a:after {
+  content: "";
+  transition: 0.4s;
+  width: 0px;
+}
+.tabmenu-wrap .tab-nav .nav.on a {
+  color: #f3efedfe; 
+}
+.tabmenu-wrap .tab-nav .nav.on a:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 3px;
+  background-color: #e1e9e8fe;
+  color: aliceblue;
+}
+.tabmenu-wrap .tab-con {
+  padding: 0px 0px;
+}
+.tabmenu-wrap .tab-con .con-box {
+  display: none;
+}

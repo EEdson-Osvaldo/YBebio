@@ -1,0 +1,327 @@
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+ background-color: #ce5c71;
+ padding-top: 0px;
+ margin-top: 0px;
+}
+body header {
+  text-align: center;
+}
+body header .grad-over {
+  font-size: 3em;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+body header .grad-over:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, darkorange, mediumvioletred);
+  background: linear-gradient(90deg, darkorange, mediumvioletred);
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+body header .grad-over:hover:after {
+  left: -100%;
+}
+body #timeline-wrapper .timeline-top {
+  text-align: center;
+}
+body #timeline-wrapper .timeline-top .top-year {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgb(114, 79, 79);
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  font-size: 2.8rem;
+}
+body #timeline-wrapper .timeline-top .top-year > span {
+  font-size: 3rem;
+}
+body #timeline-wrapper .timeline-block {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+/* A Linha*/
+body #timeline-wrapper .timeline-block:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #ce5c71;
+  left: 50%;
+  top: 0;
+  margin-left: -2px;
+}
+body #timeline-wrapper .timeline-block .timeline-events .l-event {
+  float: left;
+  position: relative;
+}
+body #timeline-wrapper .timeline-block .timeline-events .l-event .thumb {
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+/*Area do Circulo Esquerdo*/
+body #timeline-wrapper .timeline-block .timeline-events .l-event:before, body #timeline-wrapper .timeline-block .timeline-events .l-event:after {
+  position: absolute;
+  content: '';
+  color: #333;
+  width: 40px;
+  height: 40px;
+  background: rgb(46, 26, 26);
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 20px;
+  z-index: 4;
+  top: 50%;
+  right: 0;
+}
+body #timeline-wrapper .timeline-block .timeline-events .l-event:after {
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  border-radius: 30px;
+  background: rgb(114, 79, 79);
+}
+body #timeline-wrapper .timeline-block .timeline-events .l-event .event-body:before {
+  position: absolute;
+  content: '';
+  color: #333;
+  width: 16px;
+  height: 16px;
+  background: #ce5c71;
+  border-top: 1px solid #ce5c71;
+  border-right: 1px solid #ce5c71;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+          transform: rotate(45deg) translate(-50%, -50%);
+  border-radius: 3px;
+  top: 50%;
+  right: -8px;
+}
+body #timeline-wrapper .timeline-block .timeline-events .r-event {
+  float: right;
+  position: relative;
+}
+body #timeline-wrapper .timeline-block .timeline-events .r-event .thumb {
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*Area do Circulo Direito*/
+body #timeline-wrapper .timeline-block .timeline-events .r-event:before, body #timeline-wrapper .timeline-block .timeline-events .r-event:after {
+  position: absolute;
+  content: '';
+  color: #333;
+  width: 40px;
+  height: 40px;
+  background: rgb(46, 26, 26);
+  color: #333;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  top: 50%;
+  left: 0px;
+  z-index: 4;
+}
+body #timeline-wrapper .timeline-block .timeline-events .r-event:after {
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  border-radius: 30px;
+  background: rgb(114, 79, 79);
+}
+body #timeline-wrapper .timeline-block .timeline-events .r-event .event-body {
+  float: right;
+  -webkit-transform: perspective(1000px) rotateY(-4deg);
+          transform: perspective(1000px) rotateY(-4deg);
+}
+body #timeline-wrapper .timeline-block .timeline-events .r-event .event-body:before {
+  position: absolute;
+  content: '';
+  color: #333;
+  width: 16px;
+  height: 16px;
+  background: #ce5c71;
+
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+          transform: rotate(45deg) translate(-50%, -50%);
+  border-radius: 3px;
+  top: 50%;
+  left: -8px;
+}
+/*Removed Shadow*/
+body #timeline-wrapper .timeline-block .event {
+  min-height: 100px;
+  background: none;
+  position: relative;
+  margin-top: 20px;
+}
+
+/*Numeracao*/
+body #timeline-wrapper .timeline-block .event .thumb {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  color: #2c8374;
+  z-index: 5;
+}
+
+/* Card*/
+body #timeline-wrapper .timeline-block .event .event-body {
+  background-color: #d17a8a;
+  min-height: 100px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 90%;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  color: #ce5c71;
+}
+span{
+  color: rgb(211, 198, 198);
+}
+blockquote{
+  color: rgb(46, 37, 37);
+}
+h5{
+  color: rgb(68, 46, 34);
+}
+p{
+  text-align: center;
+  font-size: large;
+  color: rgb(29, 20, 20);
+}
+h2{
+  text-align: center;
+  margin-right: 22px;
+  color: rgb(29, 23, 23);
+}
+a{
+  color:rgb(0, 0, 0);
+}
+#enfase{
+  width: 140px;
+  text-align: center;
+}
+#imgQuiz{
+  width: 230px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #timeline-wrapper .timeline-block .event .event-body .person-image {
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+  height: 100%;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px dashed rgb(241, 241, 241);
+}
+body #timeline-wrapper .timeline-block .event .event-body .person-image img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  body #timeline-wrapper .timeline-top {
+    text-align: right;
+    padding-right: 20%;
+  }
+  body .timeline-block {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #ce5c71;
+  }
+  body .timeline-block:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #333;
+    left: 5%;
+    top: 0;
+    margin-left: -3px;
+    display: none;
+  }
+  body .timeline-block .r-event .event-body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #ce5c71;
+    left: -30%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #ce5c71;
+  }
+  body .timeline-block .l-event .event-body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #ce5c71;
+    right: -30%;
+    border-radius: 3px;
+    box-shadow: -1px 1px 1px #ce5c71;
+  }
+}
+body .footer-up {
+  bottom: 0;
+}
+body footer {
+  background: rgb(235, 46, 46);
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+  position: fixed;
+  width: 100%;
+  bottom: -100%;
+  left: 0;
+  z-index: 9;
+}
+body footer a {
+  padding: 5px;
+}
+body .social {
+  color: #999;
+  letter-spacing: 1px;
+}
+body .social i {
+  background: #eee;
+  color: #777;
+  padding: 5px;
+  border-radius: 50%;
+}
+body .social i:hover {
+  color: #111;
+}
+body .social .follow {
+  -webkit-animation: light 0.8s ease-in-out infinite forwards;
+          animation: light 0.8s ease-in-out infinite forwards;
+}
+@-webkit-keyframes light {
+  to {
+    color: #111;
+  }
+}
+@keyframes light {
+  to {
+    color: #111;
+  }
+}

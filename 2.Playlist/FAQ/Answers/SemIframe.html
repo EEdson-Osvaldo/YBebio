@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+	video{
+		position:static;
+		margin: 30px;
+		width: 852px;
+		height: 480px;
+		z-index:auto;
+		text-align: center;
+	}
+</style>
+<body>
+    
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video id="video-id"><source src="https://dl.dropboxusercontent.com/s/1d5kk8a4oiutxy7/V4.mp4?dl=0start=89" type="video/mp4" />
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoPlay": true,
+		"mute": false,
+		"allowTheatre": false,
+		"playPauseAnimation": false,
+		"playbackRateEnabled": false,
+		"allowDownload": false,
+		"playButtonShowing": true,
+		"fillToContainer": false,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [
+			{
+				"roll": "preRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=f46b22ae87887f20b29b7816c5a93630",
+				"adText": ""
+			},
+		],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+</script>
+</body>
+</html>

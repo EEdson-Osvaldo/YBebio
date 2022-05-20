@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<div class="tscplayer_inline">
+    <video id="video-id"><source src="ttps://bysamucatt.bebbio.workers.dev/0:/Intro%20Tamplate.mp4" type="video/mp4" />
+</div>
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": "",
+			"height": null,
+			"width": null
+		},
+		"autoPlay": true,
+		"mute": true,
+		"allowTheatre": false,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": false,
+		"allowDownload": false,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [
+			{
+				"roll": "preRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=f46b22ae87887f20b29b7816c5a93630",
+				"adText": ""
+			}
+		],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+</script>
+</body>
+</html>

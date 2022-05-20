@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style-Dropdown.css">
+    <style>
+        body {
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: fixed;
+    overflow: hidden;
+    background-color: #ce5c71;
+    
+}
+
+.Menu_oculto {
+ 
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: rgb(110, 83, 83);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.Menu_oculto a{
+    margin-top: 15px; 
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(223, 200, 200);
+    display: block;
+    transition: 0.3s;
+    padding-left: 12px;
+}
+
+
+.Menu_oculto a:hover{
+    color: #fff;
+}
+
+.btnFechar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+#Conteudo{
+   padding: 6px; 
+   transition: margin-left 0.5s; 
+   margin-right: 15%;
+   background-color: #ce5c71;
+}
+@media screen and (max-height:450px){
+    .Menu_oculto{padding-top: 15px;}
+    .Menu_oculto a{font-size: 18;}   
+}
+#quiz {
+    width: 100%;
+    height: 95vh; 
+    background-image: linear-gradient(to right top, #e992c3, #e28dbd, #dc89b7, #d584b2, #cf80ac);
+    border-style: none;
+    margin-right: 150px;
+    margin-left: 0;
+    border-radius: 12px;
+    position: fixed;
+    overflow: hidden;
+    padding-right: 150px;
+    align-content: center;
+    background-color: #ce5c71;  
+  }
+
+  img{
+      width: 80px;
+      height: 80px;
+      margin: 0px;
+      padding: 0px;
+  }
+  p{
+      font-size: 16px;
+      text-align: center;
+      color: #b9999f;
+  }
+  button{
+      background-color: #ce5c71;
+  }
+
+    </style>
+</head>
+<body>
+    <aside id="Menu_oculto" class="Menu_oculto">
+        <a   id="man" href="#" class="btnFechar" onclick="fecharNav()">&times</a>
+        <p>FAQ Pregnancy</p>
+        <a href="#" target="">
+            <nav class="menudropdown">
+                <button ><img src="./FAQ/img/question.png" class="btndropdown" onclick="mostrarDropDown()"></button>
+                <div class="menudropdown-conteudo">
+                    <a href="./FAQ/MutiplePregancy.html" target="man">Multiple Pregnancy</a>
+                    <a href="./FAQ/SideEffects.html" target="man">Side Effects</a>
+                </div>
+            </nav>
+        </a>
+        <p>Premium Content</p>
+        <a ref="./DB/index.html" target="man">
+            <nav class="menudropdown2">
+                <button ><img src="./FAQ/img/side.png" class="btndropdown2" onclick="mostrarDropDown2()"></button>
+                <div class="menudropdown-conteudo2">
+                    <a href="./DB/Index.html" target="man">BebMoM</a>
+                </div>
+            </nav>
+        </a>
+       
+    <script>
+
+
+
+    </script>    
+    </aside>
+ 
+    <section id="Conteudo">
+        <span style="font-size: 30px; cursor: pointer;" onclick="abrirNav()">&#9776</span>
+        <iframe id="quiz" src="./FAQ/MutiplePregancy.html" name="man">
+        </iframe>  
+    </section>
+    <script>
+     function abrirNav(){
+            document.getElementById(`Menu_oculto`).style.width= `150px`;
+            document.getElementById(`Conteudo`).style.marginLeft= `150px`;
+        }
+
+    function fecharNav(){
+            document.getElementById(`Menu_oculto`).style.width= `0`;
+            document.getElementById(`Conteudo`).style.marginLeft= `0`;
+        }
+
+    </script>
+
+    <script src="./script-Dropdown.js"></script>
+    
+</body>
+</html>

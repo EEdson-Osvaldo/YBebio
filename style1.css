@@ -1,0 +1,105 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #000000;
+  background-color: #a34c5c;
+  position: fixed;
+}
+
+                              /* Conteudo do home   */
+#members {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+  background-color: #ce5c71;
+}
+
+#tyu {
+  width: 99vw;
+  height: 99vh; 
+  background-color: #547a74;
+  border: white;
+  margin-right: 1%;
+  margin-left: 1%;  
+}
+
+
+     /* Toggle  */
+
+     .button-box {
+      width: 220px;
+      height: 35px;
+      margin: 1px auto;
+      position: relative;
+      border-radius: 30px;
+      background: #fff;
+      margin-top: 5px;
+      
+      
+    }
+    
+    .toggle-btn {
+      padding: 10px 40px;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      outline: none;
+      position: relative;
+      text-align: center;
+    }
+    
+    #btn {
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 110px;
+      height: 100%;
+      background: #e67e22;
+      border-radius: 30px;
+      transition: .5s;
+    }
+    #dire {
+      left: 100px;
+      top: -38px;
+    }
+
+
+                              /* FIM: Navebar    */
+#Notas {
+  width: 100%;
+  height: 95vh; 
+  background-color: #ce5c71;
+  border: white;
+  margin-right: 1%;
+  margin-left: 3px;
+  border-radius: 12px;
+}
+#Recipes {
+  width: 100%;
+  height: 95vh; 
+  background-color: #ce5c71;
+  border: white;
+  margin-right: 1%;
+  margin-left: 3px;
+  border-radius: 12px;
+}
+#Videoplaylist {
+  width: 100%;
+  height: 95vh; 
+  background-color: #ce5c71;
+  border: white;
+  margin-right: 1%;
+  margin-left: 3px;
+  border-radius: 12px;
+}
+
+
+
