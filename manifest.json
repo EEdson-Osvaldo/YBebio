@@ -1,12 +1,12 @@
 {
-  "name": "Ftest",
-  "short_name": "Ftest",
+  "name": "YBebio",
+  "short_name": "YBebio",
   "start_url": "/index.html",
   "shortcuts":[
     {
-      "name":"Ftest",
-      "short_name":"Ftest",
-      "description":"All about family",
+      "name":"YBebio",
+      "short_name":"YBebio",
+      "description":"All about YBebio",
       "url":"/index.html",
       "icons":[{
         "src": "/img/icons/icon-72x72.png",
