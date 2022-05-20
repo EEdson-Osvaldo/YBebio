@@ -1,12 +1,12 @@
 {
-  "name": "YBebio",
-  "short_name": "YBebio",
+  "name": "Bebio",
+  "short_name": "Bebio",
   "start_url": "/index.html",
   "shortcuts":[
     {
-      "name":"YBebio",
-      "short_name":"YBebio",
-      "description":"All about YBebio",
+      "name":"Bebio",
+      "short_name":"Bebio",
+      "description":"All about Bebio",
       "url":"/index.html",
       "icons":[{
         "src": "/img/icons/icon-72x72.png",
